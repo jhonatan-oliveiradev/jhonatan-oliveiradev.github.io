@@ -1,0 +1,59 @@
+<form class="form mat-elevation-z8">
+  <h1>Atualizando Cliente</h1>
+  <mat-form-field class="full-width" appearance="fill">
+    <mat-label>Nome</mat-label>
+    <input
+      [(ngModel)]="cliente.nome"
+      [formControl]="nome"
+      required
+      maxlength="100"
+      name="nome"
+      matInput
+      placeholder="Ex: João Cruz"
+    />
+    <mat-error *ngIf="nome.invalid">{{ errorValidName() }}</mat-error>
+  </mat-form-field>
+  <mat-form-field class="full-width" appearance="fill">
+    <mat-label>CPF</mat-label>
+    <input
+      [(ngModel)]="cliente.cpf"
+      [formControl]="cpf"
+      required
+      maxlength="15"
+      name="cpf"
+      matInput
+      placeholder="Ex: 000.000.000-00"
+    />
+    <mat-error *ngIf="cpf.invalid">{{ errorValidCpf() }}</mat-error>
+  </mat-form-field>
+  <mat-form-field class="full-width" appearance="fill">
+    <mat-label>Telefone</mat-label>
+    <input
+      [(ngModel)]="cliente.telefone"
+      [formControl]="telefone"
+      required
+      maxlength="18"
+      name="telefone"
+      matInput
+      placeholder="Ex: (00) 0000-0000"
+    />
+    <mat-error *ngIf="telefone.invalid">{{ errorValidTelefone() }}</mat-error>
+  </mat-form-field>
+  <button
+    class="mat-elevation-z8"
+    (click)="update()"
+    [disabled]="errorValidName() || errorValidCpf() || errorValidTelefone()"
+    mat-stroked-button
+    color="accent"
+  >
+    Atualizar
+  </button>
+  <button
+    class="mat-elevation-z8"
+    (click)="cancel()"
+    mat-stroked-button
+    color="warn"
+  >
+    Cancelar
+  </button>
+</form>

@@ -1,0 +1,12 @@
+.container {
+  height: 83%;
+}
+
+i {
+  margin-right: 1rem;
+}
+
+button {
+  margin: 1rem auto 0 1rem;
+  transition: 0.2s;
+}

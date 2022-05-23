@@ -1,0 +1,56 @@
+.create {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.create h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2rem;
+}
+
+.create button {
+  width: 100%;
+  margin: 1rem auto;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table {
+  width: 100%;
+}
+
+#edit {
+  color: #69f0a4;
+}
+
+#edit:hover {
+  color: #0aa137;
+}
+
+#view {
+  color: #4983cf;
+  padding: 0 0.5rem;
+}
+
+#view:hover {
+  color: #3341c4;
+}
+
+td.baixa {
+  color: #69f0a4;
+}
+
+td.media {
+  color: #f1e05a;
+}
+
+td.alta {
+  color: #d74336;
+}

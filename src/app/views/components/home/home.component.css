@@ -1,0 +1,39 @@
+mat-card {
+  width: 80%;
+  height: 50%;
+  left: 5rem;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card mat-card-title {
+  font-size: 2rem;
+  margin-top: -1rem;
+}
+
+.card mat-card-subtitle {
+  font-size: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+mat-card-subtitle em {
+  padding-left: 3px;
+}
+
+.card img {
+  width: 15rem;
+  height: auto;
+}

@@ -1,0 +1,44 @@
+.create {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.create h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2rem;
+}
+
+.create button {
+  width: 100%;
+  margin: 1rem auto;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table {
+  width: 100%;
+}
+
+#edit {
+  color: #69f0a4;
+}
+
+#edit:hover {
+  color: #00ff4c;
+}
+
+#delete {
+  color: #f44032;
+  padding: 0 0.5rem;
+}
+
+#delete:hover {
+  color: #f86c6b;
+}
